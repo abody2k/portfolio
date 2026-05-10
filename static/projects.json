@@ -12,5 +12,13 @@
         "projectBriefDesc": "Snake & Ladder Multiplayer Game — Full-Stack Real-Time System A full-stack, real-time Snake & Ladder game featuring both single-player and multiplayer modes.",
         "projectDesc": "This project is a full-stack, real-time Snake & Ladder game supporting both single-player (against AI) and multiplayer modes. It demonstrates modern web architecture with real-time communication, containerization, and automated testing. The system is fully Dockerized, tested using Playwright, and designed with clear separation between frontend, backend, and game logic.",
         "image":"/game.png"
+    },
+
+        {
+        "projectName": "automation-exercise",
+        "projectLink": "https://github.com/abody2k/automation-exercise",
+        "projectBriefDesc": "A full end-to-end and API automation project built using Playwright with TypeScript, focused on testing real-world user flows, handling flaky behavior, and structuring a scalable test framework.",
+        "projectDesc": "This project was developed over ~8 days as a complete automation \n solution covering: \n ✅ UI Functional Testing \n    ✅ End-to-End (E2E) Flows \n    ✅ API Testing \n    ✅ Edge Case Detection \n It includes 61 automated tests (UI + API), with documented failures highlighting real issues in the target application.",
+        "image":"/automate.png"
     }
 ]
