@@ -1,6 +1,6 @@
-# sv
+# Portfolio website
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+a portfolio for my projects made in sveltekit and hosted using firebase at my own domain [`sv`](https://github.com/sveltejs/cli).
 
 ## Creating a project
 
