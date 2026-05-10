@@ -89,7 +89,7 @@
         <div class="w-full text-lg font-semibold">
         Ongoing projects
 
-<Timeline order="horizontal">
+<Timeline order="vertical">
   <TimelineItem title="Pack Mann" date="Started on May 7 2026">
     {#snippet orientationSlot()}
       <span class="bg-primary-200 dark:bg-primary-900 absolute -left-4 flex h-6 w-6 items-center justify-center rounded-full ring-8 ring-white dark:ring-gray-900">
