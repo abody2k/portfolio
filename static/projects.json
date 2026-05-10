@@ -1,8 +1,16 @@
 [
     {
-        "projectName": "",
-        "projectLink": "",
-        "projectBriefDesc": "",
-        "projectDesc": ""
+        "projectName": "API Automation Framework",
+        "projectLink": "https://github.com/abody2k/API-Automation-Framework",
+        "projectBriefDesc": "This project is an API automation testing framework designed to validate REST APIs",
+        "projectDesc": "This project is an API automation testing framework designed to validate REST APIs with a focus on: scalable test structure, reusable components, strong coverage of positive, negative, and edge cases, maintainability as test volume grows. The framework is built to simulate real-world API testing scenarios with clean architecture and reporting support.",
+        "image":"/allure.png"
+    },
+        {
+        "projectName": "Snake And The Ladder",
+        "projectLink": "https://github.com/abody2k/snake-and-the-ladder",
+        "projectBriefDesc": "Snake & Ladder Multiplayer Game — Full-Stack Real-Time System A full-stack, real-time Snake & Ladder game featuring both single-player and multiplayer modes.",
+        "projectDesc": "This project is a full-stack, real-time Snake & Ladder game supporting both single-player (against AI) and multiplayer modes. It demonstrates modern web architecture with real-time communication, containerization, and automated testing. The system is fully Dockerized, tested using Playwright, and designed with clear separation between frontend, backend, and game logic.",
+        "image":"/game.png"
     }
 ]

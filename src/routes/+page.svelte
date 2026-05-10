@@ -31,17 +31,17 @@
 
     <NavUl>
         <NavLi>Home</NavLi>
-        <NavLi>About me</NavLi>
-        <NavLi>Projects</NavLi>
+        <NavLi href="#about-me">About me</NavLi>
+        <NavLi href="#projects">Projects</NavLi>
         <NavLi>Contact me</NavLi>
     </NavUl>
 </Navbar>
 
-<div class="p-4">
+<div class="p-4" id="#about-me">
     <div class="w-full text-lg font-semibold">
         About me
 
-        <P class="font-light text-md">
+        <P class="font-light text-md" >
             I’m a computer engineer focused on QA automation, backend
             development, and development tooling. My primary focus is building
             reliable testing workflows using Playwright, Docker, GitHub Actions,
@@ -53,13 +53,13 @@
         </P>
     </div>
 
-    <div class=" w-full text-lg font-semibold">Projects</div>
+    <div class=" w-full text-lg font-semibold" id="#projects">Projects</div>
 
     <div
         class="w-full grid gap-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center-safe"
     >
         {#each projects as project}
-            <Card title={project.projectName} description={project.projectBriefDesc}></Card>
+            <Card title={project.projectName} description={project.projectDesc} briefDescription={project.projectBriefDesc} link={project.projectLink} imageLink={project.image}></Card>
         {/each}
     </div>
 </div>
