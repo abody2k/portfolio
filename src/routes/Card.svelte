@@ -15,7 +15,7 @@
             >
                 {description}
             </p>
-            <Button class="w-40">
+            <Button class="w-40" color="blue">
                 Read more
             </Button>
         </div>
