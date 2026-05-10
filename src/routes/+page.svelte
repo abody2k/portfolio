@@ -1,5 +1,6 @@
 <script>
     import {
+    A,
         Navbar,
         NavBrand,
         NavHamburger,
@@ -33,7 +34,7 @@
         <NavLi href="#home">Home</NavLi>
         <NavLi href="#about-me">About me</NavLi>
         <NavLi href="#projects">Projects</NavLi>
-        <NavLi>Contact me</NavLi>
+        <NavLi href="#contact-me">Contact me</NavLi>
     </NavUl>
 </Navbar>
 
@@ -61,5 +62,19 @@
         {#each projects as project}
             <Card title={project.projectName} description={project.projectDesc} briefDescription={project.projectBriefDesc} link={project.projectLink} imageLink={project.image}></Card>
         {/each}
+    </div>
+
+
+
+        <div class="w-full text-lg font-semibold" id="contact-me">
+        Contact me
+
+        <P class="font-light text-md" >
+        My email : abdulrahman.7.2k@gmail.com
+        github : <A href="https://github.com/abody2k"> over here!</A>
+        Phone number : +9647744415507
+        WhatsApp : <A href="https://wa.link/343zey"> Click!</A>
+
+        </P>
     </div>
 </div>
