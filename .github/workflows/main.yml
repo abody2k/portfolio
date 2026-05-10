@@ -1,0 +1,55 @@
+name: build and deploy
+on:
+  push:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  building-app:
+    timeout-minutes: 60
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - uses: actions/setup-node@v4
+      with:
+        node-version: lts/*
+        # We will install the tests dependencies first
+    - name: Install dependencies
+      run: npm ci
+
+
+    - name: Building the website
+      env:
+          URL: ${{secrets.URL}}
+      run: npm run build
+
+
+    - name: Setup Pages
+      uses: actions/configure-pages@v5
+
+
+      
+    - name: Upload artifacts
+      uses: actions/upload-pages-artifact@v3
+      with:
+        path: "build/"
+
+
+
+
+
+
+
+  deploy:
+    needs: building-app
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Deploy to GitHub Pages
+      uses: actions/deploy-pages@v4
