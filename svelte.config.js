@@ -12,7 +12,8 @@ const config = {
 		// See https://svelte.dev/docs/kit/adapters for more information about adapters.
 		adapter: adapter(),
 		paths:{
-			base:process.env.URL
+			base:process.env.URL,
+			assets:process.env.URL
 		}
 	}
 };
