@@ -7,6 +7,8 @@
         NavLi,
         NavUl,
         P,
+        Timeline,
+        TimelineItem,
     } from "flowbite-svelte";
     import Card from "./Card.svelte";
     import { onMount } from "svelte";
@@ -76,5 +78,37 @@
         WhatsApp : <A href="https://wa.link/343zey"> Click!</A>
 
         </P>
+    </div>
+
+
+
+
+
+
+
+        <div class="w-full text-lg font-semibold">
+        Ongoing projects
+
+<Timeline order="horizontal">
+  <TimelineItem title="Pack Mann" date="Started on May 7 2026">
+    {#snippet orientationSlot()}
+      <span class="bg-primary-200 dark:bg-primary-900 absolute -left-4 flex h-6 w-6 items-center justify-center rounded-full ring-8 ring-white dark:ring-gray-900">
+      </span>
+    {/snippet}
+    <p class="mb-4 pl-4 text-base font-normal text-gray-500 dark:text-gray-400">
+      Started with an empty project
+    </p>
+  </TimelineItem>
+  <TimelineItem title="Pack Mann early build" date="To be released on May 20 2026">
+    {#snippet orientationSlot()}
+      <span class="bg-primary-200 dark:bg-primary-900 absolute -left-4 flex h-6 w-6 items-center justify-center rounded-full ring-8 ring-white dark:ring-gray-900">
+      </span>
+    {/snippet}
+    <p class="pl-4 text-base font-normal text-gray-500 dark:text-gray-400">
+        Includes controller, playing and multiplayer logic. on top of using docker and github actions to auto deploy
+    </p>
+  </TimelineItem>
+
+</Timeline>
     </div>
 </div>
