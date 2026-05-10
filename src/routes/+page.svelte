@@ -24,13 +24,13 @@
 
 <Navbar fluid={true}>
     <NavBrand>
-        <span class="text-xl font-bold">Abdulrahman</span>
+        <span id="home" class="text-xl font-bold">Abdulrahman</span>
     </NavBrand>
 
     <NavHamburger></NavHamburger>
 
     <NavUl>
-        <NavLi>Home</NavLi>
+        <NavLi href="#home">Home</NavLi>
         <NavLi href="#about-me">About me</NavLi>
         <NavLi href="#projects">Projects</NavLi>
         <NavLi>Contact me</NavLi>
