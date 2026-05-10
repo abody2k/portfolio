@@ -13,7 +13,7 @@
     let projects = $state([]);
 
     onMount(async () => {
-        let data = await fetch("/projects.json");
+        let data = await fetch(process.env.URL+"/projects.json");
         projects = (await data.json());
         console.log(projects[0]);
         
