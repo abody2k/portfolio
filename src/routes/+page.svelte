@@ -37,7 +37,7 @@
     </NavUl>
 </Navbar>
 
-<div class="p-4" id="#about-me">
+<div class="p-4" id="about-me">
     <div class="w-full text-lg font-semibold">
         About me
 
@@ -53,7 +53,7 @@
         </P>
     </div>
 
-    <div class=" w-full text-lg font-semibold" id="#projects">Projects</div>
+    <div class=" w-full text-lg font-semibold" id="projects">Projects</div>
 
     <div
         class="w-full grid gap-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center-safe"
