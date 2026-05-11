@@ -3,6 +3,11 @@
 a portfolio for my projects made in sveltekit and hosted using github actions
 
 
+[![build and deploy](https://github.com/abody2k/portfolio/actions/workflows/main.yml/badge.svg)](https://github.com/abody2k/portfolio/actions/workflows/main.yml)
+
+
+
+
 
 
 ## Developing
