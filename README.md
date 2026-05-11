@@ -1,32 +1,17 @@
 # Portfolio website
 
-a portfolio for my projects made in sveltekit and hosted using firebase at my own domain [`sv`](https://github.com/sveltejs/cli).
+a portfolio for my projects made in sveltekit and hosted using github actions
 
-## Creating a project
 
-If you're seeing this, you've probably already done this step. Congrats!
 
-```sh
-# create a new project
-npx sv create my-app
-```
-
-To recreate this project with the same configuration:
-
-```sh
-# recreate this project
-npx sv@0.15.3 create --template minimal --types ts --add tailwindcss="plugins:none" --install npm ./
-```
 
 ## Developing
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+Clone this repo and start a development server:
 
 ```sh
 npm run dev
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
 ```
 
 ## Building
@@ -37,6 +22,14 @@ To create a production version of your app:
 npm run build
 ```
 
-You can preview the production build with `npm run preview`.
+and the result files would be in /build directory
 
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+
+## Deployment
+
+
+use/change the secrets.URL to match your own repo name (including the whole link https:// etc...)
+
+in the static directory, change image links in project.json to reflect the images you want.
+
+in the +page.svelte file, change the about me to something that reflects facts about you and that's it XD.
